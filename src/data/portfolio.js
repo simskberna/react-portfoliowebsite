@@ -11,4 +11,10 @@ export default [
         stack: ['HTML', 'CSS', 'JavaScript', 'React.js'],
         link: 'https://github.com/simskberna/tenziesreactproject',
     },  
+    {
+        title: 'Portfolio Website',
+        imgUrl: '/assets/websitelogo.png',
+        stack: ['HTML', 'CSS', 'JavaScript', 'React.js'],
+        link: 'http://bernasimskporfolio.s3-website-us-east-1.amazonaws.com/',
+    },  
 ]
