@@ -7,7 +7,7 @@ export default class Timeline extends Component {
   render() {
     return (
       <div className='flex flex-col md:flex-row justify-center my-20'>
-        <div className='w-full md:w-9/12'>
+        <div className='w-full md:w-9/12 text-justify'>
           <Title>Timeline</Title>
           {timeline.map(item => (
             <TimeLineItem

@@ -10,10 +10,12 @@ export default class Portfolio extends Component {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           {portfolio.map(project => (
             <PortfolioItem
+              key={project.title}
               imgUrl={project.imgUrl}
               title={project.title} 
               stack={project.stack} 
               link={project.link} 
+              githubLink={project.githubLink}
             />
               
           ))}

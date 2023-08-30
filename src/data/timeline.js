@@ -1,9 +1,9 @@
 export default [
     {
-        year: 'Today',
+        year: 'Present',
         title: 'Front End Developer',
-        duration: '2 years',
-        details: 'I made analysis & integrations using JavaScript, jQuery, HTML & CSS . I make sure of our systems work in harmony with the customer. I made health checks to be sure that products work fine. I have experience ZOHO ticket systems and planning, is a huge part of what I do in a day of my life.',
+        duration: '3 years',
+        details: 'I make analysis & integrations using JavaScript, jQuery, HTML & CSS . I make sure of our systems work in harmony with the customer. I make the product customized. I make health checks to be sure that products work fine. I have experience ZOHO projects systems and planning, is a huge part of what I do in a day of my life.',
     },
     {
         year: '2021',

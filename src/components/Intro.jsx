@@ -7,7 +7,7 @@ export default class Intro extends Component {
         text-center pt-20 pb-6'>
         <h1 className='text-4x1 md:text-7xl mb-1 md:mb-3 font-bold dark:text-white'>Berna SIMSEK</h1>
         <p className='text-base md:text-xl mb-3 front-medium'>Front End Developer</p>
-        <p className='text-sm max-w-x1 mb-6 font-bold'>
+        <p className='text-sm max-w-x1 mb-6 font-bold text-justify'>
            I graduated from Kocaeli University, Information Systems Engineering.
            I want to continue my career as a front end developer, so I am
            constantly trying to improve myself. I have focused on serverless
