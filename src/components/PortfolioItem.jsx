@@ -12,7 +12,7 @@ const PortfolioItem = ({title,imgUrl,stack,link,githubLink}) => {
             <img
             src= {imgUrl}
             alt={title}
-            className='w-full h-36 md:h-48 object-contain cursor-pointer'
+            className='p-5 w-full h-36 md:h-48 object-contain cursor-pointer'
             />
          </a>
             <div className='w-full p-4'>

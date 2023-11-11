@@ -1,5 +1,11 @@
 export default [
-  
+    {
+        title: 'Ecommerce Website',
+        imgUrl: '/assets/home.png',
+        stack: ['React.js','Tailwind','Nodejs/Express','Google Cloud VM'],
+        githubLink: 'https://github.com/simskberna/web-app-fullstack-project',
+        link: 'https://homeappliances.vercel.app/',
+    },
     {
         title: 'Tenzies Game',
         imgUrl: '/assets/reactlogo.png',
