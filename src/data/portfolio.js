@@ -3,7 +3,7 @@ export default [
         title: 'Movies Web App',
         imgUrl: '/assets/movies-app.png',
         stack: ['Java','Spring Boot','JavaScript', 'React.js','Bootstrap'], 
-        githubLink: 'https://github.com/simskberna/java-movies-api-backend.git',
+        githubLink: 'https://github.com/simskberna/react-movies-app-frontend',
         link: 'https://react-movies-app-frontend.vercel.app/',
     },
 
