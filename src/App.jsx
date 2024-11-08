@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() { 
+function App() {
   const [theme, setTheme] = useState(null);
   
   useEffect(() => {
@@ -91,6 +91,25 @@ function App() {
           >
             <Portfolio />
           </motion.div>
+ 
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="my-12 text-center"
+          >
+            <p className="text-xl text-stone-600 dark:text-stone-200">
+              <span className="font-semibold">Like what you see?</span> There's even more to explore on my{' '}
+              <a
+                href="https://github.com/simskberna" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-violet-600 dark:text-orange-400 hover:underline hover:text-violet-500 transition duration-300 ease-in-out">
+                GitHub
+              </a>!
+            </p>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
