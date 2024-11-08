@@ -11,11 +11,11 @@ export default [
     {
         title: 'Ecommerce App',
         imgUrl: '/assets/home.png',
-        stack: ['React.js','Redux','Axios','Tailwind','Nodejs/Express','Google Cloud VM'],
+        stack: ['React.js','Redux','Axios','Tailwind','Nodejs/Express','MongoDB'],
         githubLink: 'https://github.com/simskberna/web-app-fullstack-project',
         link: 'https://homeappliances.vercel.app/',
         backendLink:'https://github.com/simskberna/nodejs-ecommerce-app-backend',
-        description:'An Ecommerce website which includes category pages, product page, basket page. It includes viewing products and adding products to cart.'
+        description:'A full-featured eCommerce app built with React, Redux, and Context API for state management. Users can browse categories, view products, and manage their cart, with cart data persisted using local storage. The backend is built with Node.js/Express.js and connected to a MongoDB database, handling user operations and product data. Axios is used for API requests, providing a seamless shopping experience.'
     }, 
     {
         title: 'Soccer League App',
@@ -25,6 +25,14 @@ export default [
         link: '/',
         backendLink:'https://github.com/simskberna/java-sboot-sleague-app-backend',
         description:'This project is a soccer league management application featuring a robust backend built with Java, Spring Boot, and PostgreSQL, and a dynamic frontend developed using Next.js, TypeScript, Tailwind CSS, Material UI, and Axios. The app enables efficient management of league data, displaying charts, tables with pagination, and other interactive components for both administrators and users. The backend handles all data processing and storage, while the frontend provides a sleek, responsive interface for seamless user experience.'
+    }, 
+    {
+        title: 'Dashboard App',
+        imgUrl: '/assets/dashboard-app.gif',
+        stack: ['React.js','JavaScript','Tanstack Query','Context API','Material UI'],
+        githubLink: 'https://github.com/simskberna/react-dasboard-app',
+        link: '/',
+        description:'This is a dynamic dashboard built with React and Material-UI, designed for seamless data visualization and analysis. It integrates Axios for data fetching and TanStack Query for efficient data management and caching. Users can easily filter chart data based on selected dates (via a date picker) and platforms (via a dropdown), providing a responsive and interactive experience. The app utilizes Context API for global state management and Tailwind CSS for a sleek, modern design. It also includes pagination and filtering features for improved usability when viewing large datasets.'
     }, 
 
 ]

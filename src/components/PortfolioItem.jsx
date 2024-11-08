@@ -16,7 +16,7 @@ const PortfolioItem = ({ title, imgUrl, stack, link, githubLink, description, ba
         />
       </a>
 
-      <div className="w-full p-6 bg-white dark:bg-stone-800">
+      <div className="w-full p-6 bg-white dark:bg-stone-800 flex flex-col justify-between flex-grow">
         <h3 className="text-xl md:text-2xl mb-3 font-semibold text-stone-900 dark:text-white transition-colors duration-200 ease-in-out group-hover:text-[#995269]">
           {title}
         </h3>
@@ -39,22 +39,21 @@ const PortfolioItem = ({ title, imgUrl, stack, link, githubLink, description, ba
             GitHub
           </a>
         </div>
-  
-       { backendLink && <div className="my-4">
+
+        <div className="my-4">
           <span className="text-sm md:text-base text-stone-700 dark:text-white text-left mb-2 block">
-            Backend Repo:
+            {backendLink && 'Backend Repo:'}
           </span>
           <a
             href={backendLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-sm md:text-base font-semibold bg-gradient-to-r from-[#e16b8c] via-[#995269] to-[#42a5f5] text-white py-2 px-4 rounded-full shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-xl"
+            className={`${backendLink ? 'bg-gradient-to-r from-[#e16b8c] via-[#995269] to-[#42a5f5]' : 'min-h-[100px]'} inline-block text-sm md:text-base font-semibold  text-white py-2 px-4 rounded-full shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-xl`}
           >
             {backendLink}
           </a>
-        </div>}
-
-        <p className="text-sm md:text-base text-stone-700 dark:text-white text-justify mb-4">
+        </div>
+        <p className="text-sm md:text-base text-stone-700 dark:text-white text-justify mb-4 flex-grow">
           {description}
         </p>
 
