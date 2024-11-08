@@ -4,20 +4,18 @@ export default class Intro extends Component {
   render() {
     return (
         <div className='flex item-center justify-center flex-col 
-        text-center pt-20 pb-6'>
-        <h1 className='text-4x1 md:text-7xl mb-1 md:mb-3 font-bold dark:text-white'>Berna SIMSEK</h1>
-        <p className='text-base md:text-xl mb-3 front-medium'>Front End Developer</p>
-        <p className='text-sm max-w-x1 mb-6 font-bold text-justify'>
-           I graduated from Kocaeli University, Information Systems Engineering.
-           I want to continue my career as a front end developer, so I am
-           constantly trying to improve myself. I have focused on serverless
-           web technologies on AWS and learning, using different JS frameworks
-           such as Vue.js. In the past, I had the opportunity to work with C#,
-           Sql, Java, Python, Javascript, HTML and CSS. I value great importance
-           to learning new information, I believe that I can be a harmonious teammate.
+        text-center pt-20 pb-6'> 
+        <p className='text-base md:text-xl mb-3 front-medium'>👋 Hi, I'm Berna SIMSEK — A Passionate Frontend Developer 🚀</p>
+        <p className='text-sm max-w-x1 mb-6 font-bold text-justify'> 
+          With nearly 3 years of experience building user-centric web applications, I specialize in creating seamless, high-performance frontend experiences. I work primarily with React, Next.js, TypeScript, and Tailwind CSS to build clean, maintainable, and intuitive interfaces. 🌐✨ Alongside this, I use Material UI, Axios, and Context API to develop scalable features that improve user interactions. 🔧
 
+          While frontend development is my main focus, I'm also comfortable working across the full stack. For personal projects, I use Node.js, Express.js, Java/Spring Boot, and PostgreSQL to build powerful backend services. 💻🔙
 
+          In my earlier years, I worked with C# and Java to create automation tools and applications during college. 🎓💡 
         </p>
+        <span className='text-sm max-w-x1 mb-6 text-justify'> 
+              I also have experience deploying projects to the cloud using Google Cloud, Vercel, and AWS, ensuring they scale and perform seamlessly. ☁️📦 On top of that, I work with MongoDB and Firebase to handle data needs with speed and reliability. 📊🔒
+              I'm always excited to collaborate, learn new technologies, and push the boundaries of what’s possible in web development. Let’s build something amazing together! 🤝🔥</span>
         </div>
     )
   }

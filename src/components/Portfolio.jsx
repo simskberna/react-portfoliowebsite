@@ -15,7 +15,9 @@ export default class Portfolio extends Component {
               title={project.title} 
               stack={project.stack} 
               link={project.link} 
+              description={project.description}
               githubLink={project.githubLink}
+              backendLink={project.backendLink}
             />
               
           ))}

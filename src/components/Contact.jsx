@@ -3,12 +3,12 @@ import Title from './Title'
 export default class Contact extends Component {
   render() {
     return (
-      <div className='flex flex-col mb-10 mx-auto'>
+      <div className='flex flex-col mb-10 mx-auto mt-10 w-full'>
         <div className='flex justify-center items-center'>
           <form
             action='https://getform.io/f/66aca1ec-bd8c-47c6-abea-033442f74cc0'
             method='POST'
-            className='flex flex-col w-full md:w-9/12'
+            className='flex flex-col w-full'
           >
             <Title>Contact</Title>
             <input

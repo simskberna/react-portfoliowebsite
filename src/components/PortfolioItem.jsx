@@ -1,48 +1,70 @@
-import React, { Component } from 'react' 
-const PortfolioItem = ({title,imgUrl,stack,link,githubLink}) => {
-    return (
-        <div className='flex flex-col border-2 border-stone-900 dark:border-white rounded-md  overflow-hidden'>
-        <a
-            href={link}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='overflow-hidden'
-        >
+import React from 'react';
 
-            <img
-            src= {imgUrl}
-            alt={title}
-            className='p-5 w-full h-36 md:h-48 object-contain cursor-pointer'
-            />
-         </a>
-            <div className='w-full p-4'>
-                <h3 className='text-lg md:text-xl mb-2 md:mb-3 dark:text-white font-semibold'>{title}</h3>
-                <p className='flex flex-wrap gap-2 flex-row items-center justify-start
-                    text-xs md:text-sm dark:text-white'> 
-                        {stack.map(item => (
-                            <span key={title} className='inline-block px-2
-                            py-1 font-semibold border-2 border-stone-900
-                            rounded-md dark:border-white'>
-                                {item}
-                            </span>
-                        ))}
-                    <a
-                        href={githubLink}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='overflow-hidden'
-                    >
-                         <span className='inline-block px-2  text-[10px]
-                            py-1 font-semibold border-2 border-stone-900
-                            rounded-md dark:border-white dark:bg-[#995269] bg-[#f6ff7f]'>
-                                {githubLink}
-                        </span>
-                    </a>
-                      
-                    </p>
-            </div>
+const PortfolioItem = ({ title, imgUrl, stack, link, githubLink, description, backendLink }) => {
+  return (
+    <div className="flex flex-col border-2 border-stone-900 dark:border-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="overflow-hidden group"
+      >
+        <img
+          src={imgUrl}
+          alt={title}
+          className="p-5 w-full h-36 md:h-48 object-contain group-hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
+        />
+      </a>
+
+      <div className="w-full p-6 bg-white dark:bg-stone-800">
+        <h3 className="text-xl md:text-2xl mb-3 font-semibold text-stone-900 dark:text-white transition-colors duration-200 ease-in-out group-hover:text-[#995269]">
+          {title}
+        </h3>
+
+        <div className="flex flex-wrap gap-2 items-center mb-4">
+          {stack.map((item, index) => (
+            <span
+              key={index}
+              className="inline-block px-3 py-1 text-xs md:text-sm font-semibold border-2 border-stone-900 dark:border-white rounded-full transition-colors duration-200 ease-in-out dark:text-white text-stone-700 hover:bg-[#29ac36] hover:text-[#995269]"
+            >
+              {item}
+            </span>
+          ))}
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-3 py-1 text-xs md:text-sm font-semibold border-2 border-[#995269] bg-[#995269] text-white rounded-full mt-2 md:mt-0 hover:bg-transparent hover:text-[#995269] transition-all duration-300"
+          >
+            GitHub
+          </a>
         </div>
-       
-  )
-} 
-export default PortfolioItem
+  
+       { backendLink && <div className="my-4">
+          <span className="text-sm md:text-base text-stone-700 dark:text-white text-left mb-2 block">
+            Backend Repo:
+          </span>
+          <a
+            href={backendLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm md:text-base font-semibold bg-gradient-to-r from-[#e16b8c] via-[#995269] to-[#42a5f5] text-white py-2 px-4 rounded-full shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-xl"
+          >
+            {backendLink}
+          </a>
+        </div>}
+
+        <p className="text-sm md:text-base text-stone-700 dark:text-white text-justify mb-4">
+          {description}
+        </p>
+
+        <hr className="my-4 border-stone-900 dark:border-white" />
+        <p className="text-xs md:text-sm text-center text-stone-500 dark:text-gray-300 mt-3">
+          Click above for more details or visit the GitHub repo!
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default PortfolioItem;
